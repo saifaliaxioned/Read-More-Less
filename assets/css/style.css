@@ -82,6 +82,12 @@ sub { bottom: -.25em; }
 .cf { *zoom: 1; }
 
 /*for all*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -106,11 +112,18 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header {
+  background: rgb(43, 46, 55);
+}
 
-
-
-
-
+.header-heading {
+  padding: 13px 0;
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+}
 
 /*=================================
   Header styling ends here
@@ -119,12 +132,86 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+body { background: rgb(204,204,204); }
 
+.services-heading {
+  padding: 50px 0 20px 0;
+  position: relative;
+  font-size: 33px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
 
+.services-heading::before,.services-heading::after {
+  content: '';
+  position: absolute;
+  background: rgb(255,75,54);
+}
 
+.services-heading::before {
+  width: 30px;
+  height: 5px;
+  bottom: 8px;
+}
+.services-heading::after {
+  width: 45px;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+}
 
+.services-items {
+  padding: 40px 0;
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 50px;
+}
 
+.services-list {
+  padding: 20px;
+  flex-basis: 31%;
+  background: rgb(255,255,255);
+ 
+}
 
+.num-heading { 
+  padding: 20px 0 16px 0;
+  color: rgb(255,92,88);
+  font-weight: 600;
+}
+
+.service-name {
+  padding: 20px 0;
+  border-top: 4px solid rgb(239,239,239);
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.desc { 
+  padding: 10px 0 50px 0;
+  color: rgb(140,138,144);
+  letter-spacing: 1px;
+}
+.toggle-btn { 
+  width: 20%;
+  padding: 20px 0 0 0;
+  color: rgb(255,75,54);
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.hide-content { display: none; }
+
+.active-list .services-list { box-shadow: 9px 9px 1px rgb(123,123,123); }
+
+.active-list .desc { padding: 10px 0 20px 0; }
+
+.active-list .toggle-btn { 
+  width: 100%;
+  padding: 10px 0 30px 0;
+}
 
 
 /*=================================
