@@ -204,7 +204,7 @@ body { background: rgb(204,204,204); }
 
 .hide-content { display: none; }
 
-.active-list .services-list { box-shadow: 9px 9px 1px rgb(123,123,123); }
+.active-list { box-shadow: 9px 9px 1px rgb(123,123,123); }
 
 .active-list .desc { padding: 10px 0 20px 0; }
 
